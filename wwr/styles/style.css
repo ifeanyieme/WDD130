@@ -15,12 +15,13 @@ nav a:hover{
 }
 .home-title{
     color: aqua;
-    font-family: 'Rock Salt', 'merriweather';
+    font-family:'Merriweather', 'Rock Salt';
     font-size: 2em;
     margin-top:10px;
+    text-align: center;
 
 }
-#hero-msg h1, #hero-msg h4{
+#hero-msg h1 #hero-msg h4{
     text-align: center;
     width: 100px;
 }
@@ -28,26 +29,25 @@ nav a:hover{
     text-align: center;
 }
 main section{
-    text-align:center;
+    text-align: center;
     box-sizing: border-box;
 }
 #background{
     height:725px;
-    background-color: bisque;
+    background-color: grey;
 }
 body{
     background-color:whitesmoke;
     font-size: 22px;
-    font-family: 'merriweather';
+    font-family: 'Merriweather';
     margin:0;
     padding:0;
 }
 header{
     background-color: rgba(18, 77, 67, 0.7);
-
 }
 .book, .join{
-    background-color: blanchedalmond;
+    background-color: whitesmoke;
     color: black;
     text-decoration: none;
     font-size:18px;
@@ -59,6 +59,7 @@ header{
     background-color: black;
     color:blanchedalmond;
 }
+
 .msg{
     background-color: rgba(15, 43, 102, 0.356);
     line-height: 1.5em;
@@ -73,9 +74,10 @@ header{
     color: black;
     font-size: .8em;
 }
-h2{
-    margin:0;
+.msg p a :hover{
+    background-color: black;
 }
+
 footer{
     background-color: grey;
     padding: 25px 50px;
@@ -86,19 +88,18 @@ footer a{
     text-decoration: none;
 }
 footer a:hover{
+    background-color: black;
     color: antiquewhite;
 }  
 footer p a:hover{
+    background-color: black;
     text-decoration:underline;
-    font: size 1.3em;
+    font: size 1.2em;
     padding:25px;
 
 }
 .social img {
     padding-top:15px;
-}
-h4{
-    color:#d9c2a3;
 }
 .logo{
     width:80px;
