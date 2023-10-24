@@ -6,6 +6,11 @@ nav a{
   text-align: center;
   color: black;
   text-decoration: none;
+  font-size: 22px;
+  font-family:Arial, Helvetica, sans-serif;
+  margin: 10px;
+  padding:10px 15px;
+  border-radius: 3px;
 }
 .img{
   text-align: center;
@@ -13,22 +18,37 @@ nav a{
   height:150px;
   border-radius:50%;
   border:10px solid #fff;
+
 }
+.card-img {
+  border: 10px solid #af9164;
+}
+
 #hero-msg h1{
   text-align: center;
+  color:cornflowerblue;
+  text-decoration: dashed;
+  padding: 15px;
+
 }
 #hero-msg h4{
   text-align: center;
+  padding: 5px;
+  font-size: 22px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .button-box{
   text-align: center;
+  font-size: 25px;
+  padding: 5px;
+  margin-top: 0;
 }
 main , section{
   text-align: center;
 }
 #background{
   height:725px;
-  background-color: aqua;
+  background-color: rgb(255, 145, 0);
 }
 body{
   background-color:bisque;
@@ -37,8 +57,9 @@ header{
   background-color:rgba(rgb(255, 0, 64), rgb 0, 128, 107);
 }
 nav a:hover{
-  background-color: aqua;
+  background-color: grey;
   color: black;
+  text-decoration: underline;
 }
 .book, .join{
   background-color: black;
@@ -59,6 +80,7 @@ nav a:hover{
 }
 footer{
   background-color: grey;
+  font-size: 22px;
 }
 footer a{
   text-decoration:underline;
