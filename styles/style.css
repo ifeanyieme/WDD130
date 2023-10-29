@@ -72,7 +72,10 @@ height: 110px;
 display: grid;
 grid-template-columns: 150px auto;
 justify-items:center;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-size:27px;
 }
+
 nav a:hover {
 background-color: black;
 color: #d1d0cf;
@@ -131,7 +134,7 @@ display: flex;
 .home-title {
 color: #0e0377;
 font-size: 2em;
-font-family: New Rocker, "Slabo", Helvetica, sans-serif;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
 margin-top: 10px;
 }
 
@@ -225,6 +228,7 @@ padding-top: 15px;
   height:500px;
   box-shadow: 8px 8px 15px #af9164;
 }
+
 @media screen and (max-width: 900px) {
   #hero, .home-grid{
     display: block;
@@ -265,4 +269,5 @@ padding-top: 15px;
   footer {
     margin-top: 25px;
   }
+
 }
