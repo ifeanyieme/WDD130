@@ -158,6 +158,7 @@ text-decoration: none;
 }
 footer a:hover {
 color: #ffffff;
+text-decoration: underline;
 } 
 
 .icon {
@@ -190,7 +191,7 @@ footer p {
 font-size: 1.2em;
 }
 footer p, a:hover {
-text-decoration: underline;
+text-decoration: none;
 }
 
 footer .social img {
