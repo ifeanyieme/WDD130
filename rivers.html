@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">s
+    <title>Rivers - Whitewater Rafting Vacations</title>
+    <link rel="stylesheet" href="styles/styles.css"/>
+</head>
+<body>
+    <header>
+        <a id="logo_link" href="index.html">
+            <img class="logo" src="images/logo.png" alt="Whitewater logo">
+        </a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="rivers.html">Rivers</a> <!-- Updated link -->
+            <a href="site-plan-rafting.html">Site Plan</a>
+            <a href="faq.html">FAQ</a>
+            <a href="contactus.html">Contact Us</a>
+        </nav>
+    </header>
+    <div id="subpage-grid">
+        <section class="subpage-content">
+             <!-- Existing content -->
+    
+            <h2>Explore the Rivers</h2>
+            <div class="slider-container">
+                <div class="slider">
+                    <img class="slider-image" src="images/rivers3.jpg" alt="River 1">
+                    
+                    <img class="slider-image" src="images/rivers1.jpg" alt="River 3">
+            
+            
+                </div>
+                <div class="button-call">
+                    <a class='join' href="contactus.html">Book Your River Adventure</a>
+                </div>
+                <button class="prev-slide" onclick="changeSlide(-1)">&#10094;</button>
+                <button class="next-slide" onclick="changeSlide(1)">&#10095;</button>
+            </div>
+            <main class="riv-grid">
+                <section class="msg-page">
+                    <div class="content">
+                        <h1>Adventurous Rapids</h1>
+                        <p>Whitewater rafting is all about the rivers, and our "Rivers" page is dedicated to celebrating these natural wonders. Discover what makes our selected rivers the perfect destination for your whitewater adventure:</p>
+                        <p>Our chosen rivers are renowned for their challenging and thrilling rapids. Experience the rush of navigating through Class III to Class V rapids, where the excitement never ends.</p>
+                        <p>Not only do these rivers offer excitement, but they also provide stunning natural beauty. Enjoy the breathtaking scenery as you raft through valleys, meadows, canyons, and high peaks.</p>
+                    </div>
+                    <img class="fast-rapids" src="images/rapids.jpg" alt="people rafting">
+                </section>
+            </main>
+            <main class="riv-grid">
+                <section class="msg-pag">
+                    <img class="mount" src="images/mountains.jpg" alt="Misty mountains">
+                    <div class="contents">
+                        <h2>Connect with Nature</h2>
+                        <p>Whether you're an experienced rafter seeking an adrenaline rush or a beginner looking for a memorable adventure, our river trips cater to all skill levels. Our experienced guides will ensure you have a safe and unforgettable experience.</p>
+                        <p>River rafting is more than just an adrenaline-pumping activity; it's a chance to connect with nature. Get away from it all and relax amidst the beauty of the great outdoors. Hear the soothing sounds of flowing water and enjoy the serenity of the wilderness.</p>
+                        <a class='join' href="rivers.html">Join Us</a>
+                    </div>
+                </section>
+            </main>
+            
+        </section>
+    </div>
+    
+    <footer>
+        <p>Dry Oar &copy; 2023 - Eme Ifeanyi</p>
+        <P><a href="site-plan-rafting.html">Site Plan</a></P>
+        <P><a href="contactus.htlm">Contact Us</a></P>
+        <div class="social">
+            <a href="https://www.facebook.com">
+                <img src="images/facebook.png" alt="fb icon">
+            </a>
+            <a href="https://twitter.com">
+                <img src="images/twitter.png" alt="twitter icon">
+            </a>
+            <a href="http://instagram.com">
+                <img src="images/instagram.png" alt="instagram icon">
+            </a>
+        </div>
+    </footer>
+<!-- The HTML content above this line -->
+
+<!-- Your HTML content above this line -->
+
+<script>
+    let slideIndex = 0;
+    let slideInterval; // Declare a variable for the interval
+
+    function showSlide(n) {
+        const slides = document.querySelectorAll('.slider-image');
+        if (n >= slides.length) {
+            slideIndex = 0;
+        }
+        if (n < 0) {
+            slideIndex = slides.length - 1;
+        }
+        for (let i = 0; i < slides.length; i++) {
+            slides[i].style.display = 'none';
+        }
+        slides[slideIndex].style.display = 'block';
+    }
+
+    function changeSlide(n) {
+        showSlide(slideIndex += n);
+    }
+
+    // Function to start the automatic sliding
+    function startAutoSlide() {
+        slideInterval = setInterval(() => {
+            changeSlide(1); // Change to the next slide
+        }, 3000); // Change slide every 3 seconds (adjust as needed)
+    }
+
+    // Function to stop the automatic sliding
+    function stopAutoSlide() {
+        clearInterval(slideInterval);
+    }
+
+    showSlide(slideIndex);
+    startAutoSlide(); // Start automatic sliding
+
+    // You can also add event listeners to pause and resume on hover
+    document.querySelector('.slider-container').addEventListener('mouseenter', stopAutoSlide);
+    document.querySelector('.slider-container').addEventListener('mouseleave', startAutoSlide);
+</script>
+</body>
+</html>
