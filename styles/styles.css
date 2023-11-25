@@ -84,7 +84,7 @@ header {
 
 
 nav {
-  display: flex;
+  display:flexbox;
   justify-content: space-between;
 }
 
